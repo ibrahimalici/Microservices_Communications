@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  rabbitMQ:
+    image: rabbitmq:3-management
+
+volumes:
+  rabbitmq-volume-sample:
+   name: rabbitmq-volume-sample
+   external: false

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  rabbitMQ:
+    container_name: rabbitMQ
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq-volume-sample:/var/lib/rabbitmq/
