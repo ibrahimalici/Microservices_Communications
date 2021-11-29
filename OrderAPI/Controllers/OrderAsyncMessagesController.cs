@@ -8,10 +8,10 @@ namespace OrderAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MessageController : ControllerBase
+    public class OrderAsyncMessagesController : ControllerBase
     {
         private readonly IPublishEndpoint publisherProvider;
-        public MessageController(IPublishEndpoint publisher_provider)
+        public OrderAsyncMessagesController(IPublishEndpoint publisher_provider)
         {
             this.publisherProvider = publisher_provider;
         }
